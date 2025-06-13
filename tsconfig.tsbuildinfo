@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/global.d.ts","./src/main.tsx","./src/vite-env.d.ts","./src/components/dashboard.tsx","./src/components/sidebar.tsx","./src/components/structure.ts","./src/components/prd/dbschema.tsx","./src/components/prd/dfddocs.tsx"],"errors":true,"version":"5.8.3"}
