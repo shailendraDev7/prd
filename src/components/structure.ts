@@ -5,169 +5,161 @@ const sidebarStructure = [
     name: "dashboard",
     parent: true,
     icon: "dasbor",
-    link: "/dashboard"
-  },
-  {
-    id: "Diagrams",
-    title: "Requirement Specifications",
-    name: "prd",
+    link: "/dashboard",
+  },  
+ {
+    id: "marketing",
+    title: "Marketing & Research",
+    name: "marketing",
     parent: true,
     icon: "transaksi",
     child: [
       {
+        id: "features",
+        title: "Features & Highlights",
+        name: "marketing.features",
+        link: "/marketing/features",
+        icon: "dot",
+      },
+      {
+        id: "vendors",
+        title: "Vendors",
+        name: "marketing.vendors",
+        link: "/marketing/vendors",
+        icon: "dot",
+        child: [
+          {
+            id: "flagships",
+            title: "Flagships",
+            name: "marketing.vendors.flagships",
+            link: "/marketing/vendors/flagships",
+            icon: "dot",
+          },
+          {
+            id: "generic",
+            title: "Generic",
+            name: "marketing.vendors.generic",
+            link: "/marketing/vendors/generic",
+            icon: "dot",
+          },
+        ],
+      },
+      {
+        id: "usp",
+        title: "Unique Selling Point (USP)",
+        name: "marketing.usp",
+        link: "/marketing/usp",
+        icon: "dot",
+        child: [
+          {
+            id: "propositions",
+            title: "propositions",
+            name: "marketing.usp.propositions",
+            link: "/marketing/usp/propositions",
+            icon: "dot",
+          },
+          {
+            id: "supabse",
+            title: "Supabse",
+            name: "marketing.usp.supabse",
+            link: "/marketing/usp/supabse",
+            icon: "dot",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "srs",
+    title: "Requirement Specifications",
+    name: "srs",
+    parent: true,
+    icon: "pusatunduhdata",
+    child: [
+      {
         id: "dfd",
         title: "DFD",
-        name: "transaksi.dfd",
-        link: "/dashboard/dfd",
-        icon: "dot"
+        name: "srs.dfd",
+        link: "/SRS/dfd",
+        icon: "dot",
       },
       {
         id: "dfddocs",
         title: "DFD Docs",
-        name: "transaksi.dfddocs",
-        link: "/dashboard/dfddocs",
-        icon: "dot"
+        name: "srs.dfddocs",
+        link: "/SRS/dfddocs",
+        icon: "dot",
       },
       {
         id: "dbschema",
         title: "DB Schema",
-        name: "transaksi.dbschema",
-        link: "/dashboard/dbschema",
-        icon: "dot"
+        name: "srs.dbschema",
+        link: "/SRS/dbschema",
+        icon: "dot",
       },
-      {
-        id: "purchase-order",
-        title: "Purchase Order",
-        name: "transaksi.po",
-        link: "/dashboard/purchase-order",
-        icon: "dot"
-      },
-      {
-        id: "tagihan",
-        title: "Tagihan",
-        name: "transaksi.tagihan",
-        link: "/dashboard/invoice",
-        icon: "dot"
-      },
-      {
-        id: "pembayaran",
-        title: "Pembayaran",
-        name: "transaksi.pembayaran",
-        link: "/dashboard/payment",
-        icon: "dot"
-      }
-    ]
+    ],
   },
   {
-    id: "perusahaan",
-    title: "Perusahaan",
-    name: "perusahaan",
+    id: "development",
+    title: "Development",
+    name: "development",
     parent: true,
     icon: "perusahaan",
     child: [
       {
-        id: "profile-perusahaan",
-        title: "Profil Perusahaan",
-        name: "perusahaan.profil",
-        link: "/dashboard/company-profile",
-        icon: "dot"
+        id: "stack",
+        title: "Stack",
+        name: "development.stack",
+        link: "/development/stack",
+        icon: "dot",
       },
       {
-        id: "akun-bank",
-        title: "Akun Bank",
-        name: "perusahaan.bank",
-        link: "/dashboard/bank-account",
-        icon: "dot"
-      },
-      {
-        id: "alamat",
-        title: "Alamat",
-        name: "perusahaan.alamat",
-        link: "/dashboard/company-address/shipping",
+        id: "api",
+        title: "API",
+        name: "development.api",
+        link: "/development/api",
         icon: "dot",
         child: [
           {
-            id: "alamat-pengiriman",
-            title: "Alamat Pengiriman",
-            name: "perusahaan.alamat.pengiriman",
-            link: "/dashboard/company-address/shipping",
-            icon: "dot"
+            id: "laravel",
+            title: "Laravel",
+            name: "development.api.laravel",
+            link: "/development/api/laravel",
+            icon: "dot",
           },
           {
-            id: "alamat-tagihan",
-            title: "Alamat Tagihan",
-            name: "perusahaan.alamat.tagihan",
-            link: "/dashboard/company-address/billing",
-            icon: "dot"
-          }
-        ]
+            id: "react",
+            title: "React",
+            name: "development.api.react",
+            link: "/development/api/react",
+            icon: "dot",
+          },
+        ],
       },
       {
-        id: "daftar-akun-pengguna",
-        title: "Daftar Akun Pengguna",
-        name: "perusahaan.akun",
-        link: "/dashboard/user-account",
-        icon: "dot"
-      },
-      {
-        id: "departemen",
-        title: "Departemen",
-        name: "perusahaan.department",
-        link: "/dashboard/department",
-        icon: "dot"
-      },
-      {
-        id: "manajemen-persetujuan",
-        title: "Manajemen Persetujuan",
-        name: "perusahaan.persetujuan",
+        id: "database",
+        title: "Database",
+        name: "development.database",
+        link: "/development/database",
         icon: "dot",
         child: [
           {
-            id: "penyetuju-kategori",
-            title: "Penyetuju Kategori",
-            name: "perusahaan.persetujuan.kategori",
-            link: "/dashboard/approval/category",
-            icon: "dot"
+            id: "mysql",
+            title: "Mysql",
+            name: "development.database.mysql",
+            link: "/development/database/mysql",
+            icon: "dot",
           },
           {
-            id: "penyetuju-departement",
-            title: "Penyetuju Departemen",
-            name: "perusahaan.persetujuan.departemen",
-            link: "/dashboard/approval/department",
-            icon: "dot"
+            id: "supabse",
+            title: "Supabse",
+            name: "development.database.supabse",
+            link: "/development/database/supabse",
+            icon: "dot",
           },
-          {
-            id: "e-procurement",
-            title: "E-procurement",
-            name: "perusahaan.persetujuan.proc",
-            link: "/dashboard/approval/eproc",
-            icon: "dot"
-          },
-          {
-            id: "pengaturan",
-            title: "Pengaturan",
-            name: "perusahaan.persetujuan.config",
-            link: "/dashboard/approval/configure",
-            icon: "dot"
-          }
-        ]
+        ],
       },
-      {
-        id: "pengaturan-pembelian",
-        title: "Pengaturan Pembelian",
-        name: "perusahaan.pengaturan.pembelian",
-        icon: "dot",
-        child: [
-          {
-            id: "anggaran",
-            title: "Anggaran",
-            name: "perusahaan.pengaturan.pembelian.anggaran",
-            link: "/dashboard/purchase-setting/budget",
-            icon: "dot"
-          }
-        ]
-      }
-    ]
+    ],
   },
   {
     id: "mou",
@@ -175,38 +167,8 @@ const sidebarStructure = [
     name: "mou",
     parent: true,
     icon: "mou",
-    link: "/dashboard/mou"
+    link: "/dashboard/mou",
   },
-  {
-    id: "pusat-unduh-data",
-    title: "Pusat Unduh Data",
-    name: "pusatunduhdata",
-    parent: true,
-    icon: "pusatunduhdata",
-    child: [
-      {
-        id: "unduh-data-transaksi",
-        title: "Unduh Data Transaksi",
-        name: "pusatunduhdata.unduhdatatransaksi",
-        link: "/dashboard/download/transaction",
-        icon: "dot"
-      },
-      {
-        id: "unduh-data-perusahaan",
-        title: "Unduh Data Perusahaan",
-        name: "pusatunduhdata.unduhdataperusahaan",
-        link: "/dashboard/download/company",
-        icon: "dot"
-      },
-      {
-        id: "unduh-data-mou",
-        title: "Unduh Data MOU",
-        name: "pusatunduhdata.unduhdatamou",
-        link: "/dashboard/download/mou",
-        icon: "dot"
-      }
-    ]
-  }
 ];
 
 export { sidebarStructure };

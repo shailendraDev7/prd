@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import Sidebar from "../../prd/src/components/Sidebar";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
-import DBSchema from "./components/prd/DBSchema";
-import Diagram from "./components/prd/Diagram";
-import DfdDocs from "./components/prd/DfdDocs";
+import DBSchema from "./components/SRS/DBSchema";
+import Diagram from "./components/SRS/Diagram";
+import DfdDocs from "./components/SRS/DfdDocs";
+import Stack from "./components/Development/Stack";
+import Sidebar from "./components/Sidebar";
+import MOU from "./components/MOU";
 
 function App() {
   const [sideMenuIsExpand, setSideMenuIsExpand] = useState(true);
@@ -20,9 +22,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/dashboard/dfd" element={<Diagram/>} />
-          <Route path="/dashboard/dfddocs" element={<DfdDocs/>} />
-          <Route path="/dashboard/dbschema" element={<DBSchema/>} />
+          <Route path="/SRS/dfd" element={<Diagram/>} />
+          <Route path="/SRS/dfddocs" element={<DfdDocs/>} />
+          <Route path="/SRS/dbschema" element={<DBSchema/>} />
+          <Route path="/development/stack" element={<Stack/>} />
+          <Route path="/mou" element={<MOU/>} />
           {/* Add other routes here */}
         </Routes>
       </div>
