@@ -167,7 +167,7 @@ const sidebarStructure = [
     name: "mou",
     parent: true,
     icon: "mou",
-    link: "/dashboard/mou",
+    link: "/mou",
   },
 ];
 
