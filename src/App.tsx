@@ -20,8 +20,7 @@ function App() {
         }`}
       >
         <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/SRS/dfd" element={<Diagram />} />
           <Route path="/SRS/dfddocs" element={<DfdDocs />} />
           <Route path="/SRS/dbschema" element={<DBSchema />} />
